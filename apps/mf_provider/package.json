@@ -1,5 +1,5 @@
 {
-  "name": "mf_consumer",
+  "name": "mf_provider",
   "private": true,
   "version": "1.0.0",
   "scripts": {
@@ -8,8 +8,8 @@
     "preview": "rsbuild preview"
   },
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react": "catalog",
+    "react-dom": "catalog"
   },
   "devDependencies": {
     "@rsbuild/core": "^1.2.15",
