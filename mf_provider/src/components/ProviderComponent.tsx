@@ -1,5 +1,5 @@
-import React from 'react';
-import './ProviderComponent.css';
+import React from "react";
+import "./ProviderComponent.css";
 
 const Provider: React.FC = () => {
   return (
@@ -11,7 +11,8 @@ const Provider: React.FC = () => {
           className="logo-image"
         />
       </div>
-      <h1 className="title">Hello Module Federation 2.0</h1>
+      <h1 className="title">Hello Module Federation 2.0.</h1>
+      <p>I am a provider {new Date().getFullYear()}</p>
     </div>
   );
 };
