@@ -12,9 +12,11 @@ const Provider: React.FC = () => {
         />
       </div>
       <h1 className="title">Hello Module Federation 2.0</h1>
-      <p>I am a provider {new Date().getFullYear()}</p>
-      <p>Configurado o monorepo Letox</p>
-      <footer>Powered by @werlitonsilva</footer>
+      <p>Eu sou um módulo federado(compartilhado) {new Date().getFullYear()}</p>
+      <p>Configurado com monorepo por:</p>
+      <footer>
+        <a href="https://github.com/werliton">@werlitonsilva</a>
+      </footer>
     </div>
   );
 };
