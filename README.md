@@ -108,14 +108,6 @@ export default defineConfig({
 - [Documentação do Rsbuild sobre Module Federation](https://rsbuild.dev/guide/advanced/module-federation)
 - [Repositório oficial do Module Federation](https://github.com/module-federation)
 
----
-
-## 🛠️ Scripts Disponíveis
-
-- `pnpm dev`: Inicia todos os aplicativos em modo de desenvolvimento.
-
-- `pnpm build`: Compila todos os aplicativos para produção.
-
 ## 🚢 Deploy
 
 Esse projeto pode ser facilmente adaptado para deploy via serviços como Vercel, Netlify, AWS S3 ou Cloudflare Pages.
