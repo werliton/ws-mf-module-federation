@@ -1,23 +1,45 @@
 import React from "react";
 import "./ProviderComponent.css";
 
-const Provider: React.FC = () => {
+interface ProviderProps {
+  user: {
+    name: string;
+    email: string;
+  };
+}
+
+const Provider: React.FC<ProviderProps> = ({ user }) => {
+  if (!user) return null;
   return (
-    <div className="container">
-      <div className="icon-container">
-        <img
-          src="https://module-federation.io/svg.svg"
-          alt="logo"
-          className="logo-image"
-        />
+    <main>
+      <div className="container-provider">
+        <div className="icon-container">
+          <img
+            src="https://module-federation.io/svg.svg"
+            alt="logo"
+            className="logo-image"
+          />
+        </div>
+        <h1 className="title">MF Provider</h1>
+        {user && (
+          <section>
+            <p>
+              Dados do usuário <b>(recebidos pelo MF CONSUMER)</b>
+            </p>
+            <ul>
+              <li>{user.name}</li>
+              <li>{user.email}</li>
+            </ul>
+          </section>
+        )}
       </div>
-      <h1 className="title">Hello Module Federation 2.0</h1>
-      <p>Eu sou um módulo federado(compartilhado) {new Date().getFullYear()}</p>
-      <p>Configurado com monorepo por:</p>
       <footer>
-        <a href="https://github.com/werliton">@werlitonsilva</a>
+        <p>
+          Configurado com monorepo por:{" "}
+          <a href="https://github.com/werliton">@werlitonsilva</a>
+        </p>
       </footer>
-    </div>
+    </main>
   );
 };
 

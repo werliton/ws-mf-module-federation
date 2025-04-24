@@ -2,6 +2,14 @@
 
 Este projeto demonstra uma arquitetura de micro frontends utilizando **Module Federation** com **Rsbuild** em um monorepo gerenciado por **pnpm** e **Lerna**.
 
+## Layout
+
+![Layout](./assets/screen.png)
+
+## Arquitetura
+
+![Layout](./assets/arch.png)
+
 ## 📦 Estrutura do Monorepo
 
 ```

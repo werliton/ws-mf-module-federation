@@ -1,9 +1,11 @@
-.container {
+.container-provider {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  /* height: calc(100vh - 80px); */
+  height: calc(100vh - 100px);
+  width: 100%;
   background: linear-gradient(45deg, #3a65f2, #6a5acd, #8a2be2, #023cfc);
   background-size: 400% 400%;
   animation: gradientFlow 6s ease infinite;
@@ -49,4 +51,24 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+footer {
+  margin: 0;
+  background-color: #c0bebe;
+  height: 50px;
+  padding: 0px 10px;
+  width: 100%;
+  color: #2c2c2c98;
+  
+  a {
+    color: #41404098;
+  }
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
